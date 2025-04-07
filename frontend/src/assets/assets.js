@@ -194,7 +194,7 @@ export const sellers = [
         speciality: 'Single Bed-Room',
         beds: ["1","2","3","4"],
         image: mess3,
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+        about: 'A spacious living room with large windows, perfect for natural light and gatherings and walk-in closet for added luxury',
         fees: 1050,
         price: {
             single: 1000,
