@@ -5,7 +5,7 @@ import { SellersContext } from '../context/SellersContext'
 const TopMesses = () => {
   const {currency, messes} = useContext(SellersContext)
 
-  const [wishList, setWishList] = useState('no')
+  // const [wishList, setWishList] = useState('no')
   const navigate = useNavigate()
   return (
     
@@ -27,11 +27,11 @@ const TopMesses = () => {
                 <p className='text-sm inline-block'>{item.address.line2}</p>
                 <div className='flex'>
                 <p className='text-lg font-semibold text-gray-800 lg:mt-3 mt-1 mb-1'>{currency} {item.prices.singel}</p>
-                {
+                {/* {
                   wishList === 'no' ?
                   <img onClick={()=> setWishList('yes')} src={assets.favorite_img} className='w-8 h-8 lg:ml-60 sm:ml-20 lg:mt-2 ml-10' alt="" />
                   : <img onClick={()=> setWishList('no')} src={assets.heart_img} className='w-8 h-8 lg:ml-60 sm:ml-20 lg:mt-2 ml-10' alt="" />
-                }
+                } */}
                 
                 </div>
               </div>

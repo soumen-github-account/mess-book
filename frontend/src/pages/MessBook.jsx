@@ -114,9 +114,9 @@ const MessBook = () => {
           <div className='w-full my-3 flex justify-center'><button onClick={bookAppointment} className='bg-[#2B1B12] text-white rounded-full px-3 py-2 font-medium'>Add to wishlist</button></div>
         </div>
       </div>
-      {/* <div className='flex-2 lg:block max-h-[450px] lg:max-w-96 w-full overflow-scroll mt-2'>
+      <div className='flex-2 lg:block max-h-[450px] lg:max-w-96 w-full overflow-scroll mt-2'>
         <Map items={messInfo}/>
-      </div> */}
+      </div>
 
       
     </div>

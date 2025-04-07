@@ -80,9 +80,9 @@ const Messes = () => {
           }
 
         </div>
-        {/* <div className='h-[40vw] flex-2 lg:block hidden'>
+        <div className='h-[40vw] flex-2 lg:block hidden'>
          <Map items={searchmess}/>
-        </div> */}
+        </div>
       </div>
     </div>
   )
