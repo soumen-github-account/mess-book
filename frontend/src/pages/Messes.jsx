@@ -34,6 +34,7 @@ const Messes = () => {
       console.log(messes)
     } 
   }
+  const fallbackPrice = messes.prices?.singel || messes.prices?.double || messes.prices?.triple || messes.prices?.quarter;
 
   // useEffect(()=>{
   //   applyFilter()
@@ -68,11 +69,7 @@ const Messes = () => {
                   <p className='text-sm inline-block overflow-clip'>{item.address?.line1}</p>
                   <p className='text-sm inline-block'>{item.address?.line2}</p>
                   <div className='flex'>
-<<<<<<< HEAD
-                  <p className='text-lg font-semibold text-gray-800 lg:mt-3 mt-1 mb-1'>{currency} {item.prices?.singel ? item.prices?.singel : item.prices?.double ? item.prices?.double : item.prices?.triple ? item.prices?.triple : item.prices?.quarter}</p>
-=======
-                  <p className='text-lg font-semibold text-gray-800 lg:mt-3 mt-1 mb-1'>{currency} {item.prices?.single?? "3200"}</p>
->>>>>>> b05f06bcc3d3cdd31e95a1f95bc08d751366ec71
+                  <p className='text-lg font-semibold text-gray-800 lg:mt-3 mt-1 mb-1'>{currency} {fallbackPrice}</p>
                   {/* <img src={assets.favorite_img} className='w-8 h-8 lg:ml-60 sm:ml-20 lg:mt-2 ml-10' alt="" /> */}
                   </div>
                 </div>

@@ -7,6 +7,8 @@ const ReletedMesses = () => {
   const {currency,messes} = useContext(SellersContext)
   const navigate = useNavigate()
   // const [wishList, setWishList] = useState('no')
+  const fallbackPrice = messes.prices?.singel || messes.prices?.double || messes.prices?.triple || messes.prices?.quarter;
+
   return (
     <div className='mt-16'>
     <p className='lg:text-3xl md:text-2xl text-2xl items-start font-semibold'>Releted messes</p>
@@ -25,7 +27,7 @@ const ReletedMesses = () => {
               <p className='text-sm inline-block overflow-clip'>{item.address?.line1}</p>
               <p className='text-sm inline-block'>{item.address?.line2}</p>
               <div className='flex'>
-              <p className='text-lg font-semibold text-gray-800 lg:mt-3 mt-1 mb-1'>{currency} {item.prices?.singel ? item.prices?.singel : item.prices?.double ? item.prices?.double : item.prices?.triple ? item.prices?.triple : item.prices?.quarter}</p>
+              <p className='text-lg font-semibold text-gray-800 lg:mt-3 mt-1 mb-1'>{currency} {fallbackPrice}</p>
               {/* {
                 wishList === 'no' ?
                 <img onClick={()=> setWishList('yes')} src={assets.favorite_img} className='w-8 h-8 lg:ml-60 sm:ml-20 lg:mt-2 ml-10' alt="" />
