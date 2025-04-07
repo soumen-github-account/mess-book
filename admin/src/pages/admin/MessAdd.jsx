@@ -199,7 +199,7 @@ const MessAdd = () => {
                        beds.includes("3") ? <input onChange={(e)=>setPrice3(e.target.value)} value={price3} className='border rounded px-3 py-2' type="number" placeholder='Triple bed price' required /> : <div></div>
                     }
                     {
-                        beds.includes("3") ? <input onChange={(e)=>setPrice4(e.target.value)} value={price4} className='border rounded px-3 py-2' type="number" placeholder='Quarter bed price' required /> :<div></div>
+                        beds.includes("4") ? <input onChange={(e)=>setPrice4(e.target.value)} value={price4} className='border rounded px-3 py-2' type="number" placeholder='Quarter bed price' required /> :<div></div>
                     }
                     
                     </div>
