@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
-import MessAdd from './pages/admin/messAdd'
+import MessAdd from './pages/admin/MessAdd'
 
 const App = () => {
   return (
