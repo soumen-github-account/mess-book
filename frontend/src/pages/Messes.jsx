@@ -65,10 +65,10 @@ const Messes = () => {
                   <div className='flex items-center gap-2 text-sm text-center text-green-500'>
                     <p className='w-2 h-2 bg-green-500  rounded-full'></p><p>Available</p>
                   </div>
-                  {/* <p className='text-sm inline-block overflow-clip'>{item.address.line1}</p>
-                  <p className='text-sm inline-block'>{item.address.line2}</p> */}
+                  <p className='text-sm inline-block overflow-clip'>{item.address?.line1}</p>
+                  <p className='text-sm inline-block'>{item.address?.line2}</p>
                   <div className='flex'>
-                  <p className='text-lg font-semibold text-gray-800 lg:mt-3 mt-1 mb-1'>{currency} 100</p>
+                  <p className='text-lg font-semibold text-gray-800 lg:mt-3 mt-1 mb-1'>{currency} {item.prices?.singel ? item.prices?.singel : item.prices?.double ? item.prices?.double : item.prices?.triple ? item.prices?.triple : item.prices?.quarter}</p>
                   {/* <img src={assets.favorite_img} className='w-8 h-8 lg:ml-60 sm:ml-20 lg:mt-2 ml-10' alt="" /> */}
                   </div>
                 </div>

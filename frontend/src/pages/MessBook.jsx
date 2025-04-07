@@ -120,7 +120,7 @@ const MessBook = () => {
 
       
     </div>
-    {/* <ReletedMesses/> */}
+    <ReletedMesses/>
     </div>
   )
 }
